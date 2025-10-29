@@ -1,0 +1,109 @@
+/* ===== General Page Style ===== */
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: 'Press Start 2P', monospace; /* شكل 8-bit زي الصورة */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Title and Top Text ===== */
+h1 {
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+p {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 0.8rem;
+  color: #eee;
+}
+
+/* ===== "?" Number Box ===== */
+.computerguess {
+  background-color: #eee;
+  color: #222;
+  font-size: 3rem;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 5px;
+}
+
+/* خطوط بيضا شمال ويمين المربع */
+.computerguess::before,
+.computerguess::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40vw;
+  height: 2px;
+  background-color: #eee;
+}
+
+.computerguess::before {
+  left: -40vw;
+}
+
+.computerguess::after {
+  right: -40vw;
+}
+
+/* ===== Input Field ===== */
+.userguess {
+  width: 6rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #222;
+  color: #eee;
+  border: 3px solid #eee;
+  margin-top: 20px;
+  font-family: 'Press Start 2P', monospace;
+}
+
+/* ===== Buttons ===== */
+.checkk,
+.reset {
+  background-color: #eee;
+  color: #222;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Press Start 2P', monospace;
+  margin-top: 10px;
+}
+
+.checkk:hover,
+.reset:hover {
+  background-color: #ddd;
+}
+
+/* زر Again أعلى اليسار */
+.reset {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+/* ===== Messages and Scores ===== */
+.message {
+  font-size: 1rem;
+  margin-top: 20px;
+  height: 30px;
+}
+
+.scoree,
+.highscoree {
+  font-size: 1rem;
+  color: #eee;
+  margin: 10px;
+}
